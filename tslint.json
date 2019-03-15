@@ -1,0 +1,28 @@
+{
+    "extends": [
+        "tslint:latest",
+        "tslint-config-airbnb",
+        "tslint-eslint-rules",
+        "tslint-config-prettier"
+    ],
+    "rules": {
+        "interface-name": [true,"never-prefix"],
+        "variable-name": [false],
+        "import-name": [false],
+        "member-ordering": [false],
+        "no-console": [false],
+        "object-literal-sort-keys": false,
+        "ordered-imports": false,
+        "no-empty-interface": false,
+        "no-unused-variable": false,
+        "no-submodule-imports": false,
+        "no-implicit-dependencies": [false],
+        "array-type": [true, "array"],
+        "function-name": [false, {"static-method-regex": "^[a-z][\\w\\d]+$"}],
+        "strict-boolean-expressions": [false],
+        "no-boolean-literal-compare": [false],
+        "prefer-template": [false],
+        "no-empty": [false],
+        "object-shorthand-properties-first": [false]
+    }
+}

@@ -1,0 +1,47 @@
+{
+  "extends": "../paths.config.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "es6",
+      "dom",
+      "es2017"
+    ],
+    "target": "es6",
+    "skipLibCheck": true,
+    "preserveConstEnums": true,
+    "allowJs": false,
+    "outDir": "./dist",
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "paths": {
+    "@imp/*": [
+      "./client/*"
+    ]
+  },
+  "typeRoots": [
+    "./src/types",
+    "./node_modules/@types"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ],
+  "include": [
+    "src"
+  ]
+}
